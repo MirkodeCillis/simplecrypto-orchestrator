@@ -35,7 +35,7 @@ services:
     hostname: simplecrypto-server
     restart: always
     build:
-      context: ./simplecrypto-server
+      context: ./simplecrypto-backend
       dockerfile: Dockerfile
     env_file:
       - .env
@@ -52,4 +52,4 @@ services:
     env_file:
       - .env
     build:
-      context: ./simplecrypto-client
+      context: ./simplecrypto-frontend
